@@ -1,6 +1,15 @@
 package util;
 
+/**
+ * オリジナルのデバッグクラス
+ * @author Yuzunoha
+ *
+ */
 public class Debug {
+	/**
+	 * スタックとレースをちょうどいい感じに出力するメソッド
+	 * @param str 出力したいログメッセージ
+	 */
 	public static void debugln(String str) {
 		// スタックトレース配列
 		StackTraceElement[] ste = Thread.currentThread().getStackTrace();
